@@ -7,8 +7,6 @@ from discord_webhook import DiscordWebhook
 from buienradar_api import BuienradarWeatherAPI
 from weather_api import WeatherAPI, WeatherReading
 
-print(f'{os.environ=}')
-
 DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
 LATITUDE = float(os.environ.get('LATITUDE'))
 LONGITUDE = float(os.environ.get('LONGITUDE'))

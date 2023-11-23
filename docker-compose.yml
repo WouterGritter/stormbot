@@ -3,3 +3,9 @@ services:
   weather-bot:
     build: '.'
     restart: unless-stopped
+    environment:
+      DISCORD_WEBHOOK_URL: ${DISCORD_WEBHOOK_URL}
+      LATITUDE: ${LATITUDE}
+      LONGITUDE: ${LONGITUDE}
+      WIND_FORCE_THRESHOLD: ${WIND_FORCE_THRESHOLD}
+      UPDATE_INTERVAL: ${UPDATE_INTERVAL}

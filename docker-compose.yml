@@ -1,0 +1,6 @@
+version: '3.0'
+services:
+  weather-bot:
+    build: '.'
+    env_file: '.env'
+    restart: unless-stopped

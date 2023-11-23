@@ -3,12 +3,11 @@ import time
 from typing import Optional
 
 from discord_webhook import DiscordWebhook
-from dotenv import load_dotenv
 
 from buienradar_api import BuienradarWeatherAPI
 from weather_api import WeatherAPI, WeatherReading
 
-load_dotenv()
+print(f'{os.environ=}')
 
 DISCORD_WEBHOOK_URL = os.environ.get('DISCORD_WEBHOOK_URL')
 LATITUDE = float(os.environ.get('LATITUDE'))

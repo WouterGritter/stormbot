@@ -13,6 +13,8 @@ LONGITUDE = float(os.environ.get('LONGITUDE'))
 WIND_FORCE_THRESHOLD = int(os.environ.get('WIND_FORCE_THRESHOLD'))
 UPDATE_INTERVAL = int(os.environ.get('UPDATE_INTERVAL'))
 
+print('Testing')
+
 print(f'DISCORD_WEBHOOK_URL={DISCORD_WEBHOOK_URL[:50]}...')
 print(f'{LATITUDE=}')
 print(f'{LONGITUDE=}')

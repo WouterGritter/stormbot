@@ -22,7 +22,7 @@ print(f'{UPDATE_INTERVAL=}')
 
 def discord_number(number: int) -> str:
     emojis = [':zero:', ':one:', ':two:', ':three:', ':four:', ':five:', ':six:', ':seven:', ':eight:', ':nine:',
-              ':ten:']
+              ':keycap_ten:']
 
     if 0 <= number < len(emojis):
         return emojis[number]

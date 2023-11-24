@@ -59,7 +59,7 @@ def format_weather_reading(reading: WeatherReading, forecast_message: str) -> st
         f'> **Windkracht** {discord_number(reading.wind_force)} ({reading.wind_speed} > {reading.wind_gust_speed} m/s)\n' + \
         f'> **Windrichting** {reading.wind_direction_name}\n' + \
         f'> {reading.temperature} °C / {reading.humidity}%\n\n' + \
-        f'_(Laatste meting op {reading.timestamp.hour}:{reading.timestamp.minute})_'
+        f'_(Laatste meting op {reading.timestamp.hour:02d}:{reading.timestamp.minute:02d})_'
 
 
 def send_discord_message(message: str) -> None:
